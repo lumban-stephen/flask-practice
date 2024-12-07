@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <label for="username">Username</label>{{ form.username() }}<br>
+    <label for="email">Email</label>{{ form.email() }}<br>
+    <label for="password">Password</label>{{ form.password() }}<br>
+    <label for="confirm_password">Confirm Password</label>{{ form.confirm_password() }}<br>
+    <label for="first_name">First Name</label>{{ form.first_name() }}<br>
+    <label for="last_name">Last Name</label>{{ form.last_name() }}<br>
+    <button type="submit">Register</button>
+</form>
+{% endblock %}

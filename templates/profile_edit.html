@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Edit Profile</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <label for="first_name">First Name</label>{{ form.first_name() }}<br>
+    <label for="last_name">Last Name</label>{{ form.last_name() }}<br>
+    <label for="email">Email</label>{{ form.email() }}<br>
+    <button type="submit">Save Changes</button>
+</form>
+{% endblock %}
